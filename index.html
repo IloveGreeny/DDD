@@ -38,7 +38,7 @@ const svg = d3.select("#hi")
     .attr("height", h);
 
 function run() {
-    var rect = svg.selectAll("rect").data(dataset, function(d) {return d.id;});
+    let rect = svg.selectAll("rect").data(dataset, function(d) {return d.id;});
 
 
     rect.transition()
